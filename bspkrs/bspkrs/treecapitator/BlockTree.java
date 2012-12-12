@@ -1,7 +1,7 @@
 package bspkrs.treecapitator;
 
 import net.minecraft.server.Block;
-import net.minecraft.server.BlockLeavesBase;
+import net.minecraft.src.BlockLeavesBase;
 import net.minecraft.server.BlockLog;
 import net.minecraft.server.BlockVine;
 import net.minecraft.server.EntityPlayer;

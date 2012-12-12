@@ -5,7 +5,7 @@ import bspkrs.util.ModVersionChecker;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.BaseMod;
 import net.minecraft.server.MLProp;
-import net.minecraft.server.ModLoader;
+import net.minecraft.src.ModLoader;
 
 public abstract class mod_treecapitator extends BaseMod
 {
@@ -114,7 +114,7 @@ public abstract class mod_treecapitator extends BaseMod
         ModLoader.setInGameHook(this, true, true);
     }
 
-    public boolean onTickInGame(float var1, Minecraft var2)
+    public boolean onTickInGame(float var1, MinecraftServer var2)
     {
         if (TreeCapitator.allowUpdateCheck && !this.versionChecker.isCurrentVersion())
         {
