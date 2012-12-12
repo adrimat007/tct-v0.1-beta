@@ -2,9 +2,12 @@ package net.minecraft.server;
 
 import bspkrs.treecapitator.TreeCapitator;
 import bspkrs.util.ModVersionChecker;
-import net.minecraft.client.Minecraft;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.BaseMod;
+import net.minecraft.server.MLProp;
+import net.minecraft.server.ModLoader;
 
-public class mod_treecapitator extends BaseMod
+public abstract class mod_treecapitator extends BaseMod
 {
     @MLProp(
             info = "Set to true to allow checking for mod updates, false to disable"
